@@ -1,9 +1,9 @@
 {
-	"name": "secondcropcreative",
+	"name": "linkresponsibly",
 	"version": "1.0.0",
 	"description": "",
 	"main": "Gruntfile.js",
-	"author": "Ross Harried",
+	"author": "Alex Whalberg, Benjamin Hendricks, Cory Mandt & Ross Harried",
 	"license": "ISC",
 	"devDependencies": {
 		"connect-ssi": "^1.1.0",
