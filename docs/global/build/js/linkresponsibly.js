@@ -1170,7 +1170,7 @@ function convertResponsive() {
 	if ($('.holding').length == 0) {
 		alert('Drag Out Hotspot');
 	} else if (link == '' || link == null || link == undefined) {
-		alert('Enter Hotspot link');
+		alert('dude. enter a linkypoo');
 	} else {
 		var box = $('.holding'),
 			$image = $('#drawingArea img:first'),
