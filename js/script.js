@@ -113,7 +113,7 @@ function convertResponsive() {
 		hotspot[3] = 100 * (hotspot[3] / $image.height());
 
 		for (var i = 0; i < (hotspot.length - 1); i++) {
-			hotspot[i] = (parseFloat(hotspot[i]).toFixed(2)) + "%";
+			hotspot[i] = (parseFloat(hotspot[i]).toFixed(1)) + "%";
 		}
 
 		$image.after('\n' + '<a ' + type + '="' + hotspot[4] + '" class="rim-hotspot" style="width:' + hotspot[0] + ';height:' + hotspot[1] + ';left:' + hotspot[2] + ';top:' + hotspot[3] + ';position:absolute;cursor:pointer">' + ieEight + '</a>');
