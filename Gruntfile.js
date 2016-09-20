@@ -7,8 +7,8 @@ module.exports = function(grunt) {
 			css: {
 				src: ['docs/global/css/bootstrap.min.css',
 					'docs/global/css/jquery.fancybox.css',
+					'docs/global/css/prettify.css',
 					'docs/global/css/hemisu-dark.css',
-					'docs/global/css/prism.css',
 					'docs/global/css/style.css'
 				],
 
@@ -18,11 +18,11 @@ module.exports = function(grunt) {
 				options: {
 					separator: ';',
 				},
-				src: ['docs/global/js/bootstrap.min.js',
+				src: [
+					'docs/global/js/bootstrap.min.js',
 					'docs/global/js/jquery.fancybox.pack.js',
-					'docs/global/js/script.js',
 					'docs/global/js/prettify.js',
-					'docs/global/js/prism.js'
+					'docs/global/js/script.js'
 				],
 
 				dest: 'docs/global/build/js/linkresponsibly.js'
