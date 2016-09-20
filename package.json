@@ -1,0 +1,27 @@
+{
+	"name": "secondcropcreative",
+	"version": "1.0.0",
+	"description": "",
+	"main": "Gruntfile.js",
+	"author": "Ross Harried",
+	"license": "ISC",
+	"devDependencies": {
+		"connect-ssi": "^1.1.0",
+		"grunt": "^0.4.5",
+		"grunt-connect": "^0.2.0",
+		"grunt-contrib-concat": "^0.5.1",
+		"grunt-contrib-connect": "^0.11.2",
+		"grunt-contrib-cssmin": "^0.14.0",
+		"grunt-contrib-imagemin": "^1.0.0",
+		"grunt-contrib-jshint": "^0.11.3",
+		"grunt-contrib-uglify": "^0.9.2",
+		"grunt-contrib-watch": "~0.5.3",
+		"grunt-image": "^1.2.0",
+		"grunt-serve": "^0.1.6",
+		"grunt-ssi": "^0.2.1",
+		"ssi": "^0.1.5"
+	},
+	"dependencies": {
+		"connect-include": "^0.2.3"
+	}
+}
