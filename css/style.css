@@ -8,7 +8,7 @@
 */
 
 body {
-	background-image: url('/css/images/patterns/dark-leather.png');
+	background-image: url('css/images/patterns/dark-leather.png');
 	margin: 0;
 	padding: 0;
 	background-color: rgba(0, 0, 0, .9);
