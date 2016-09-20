@@ -117,7 +117,9 @@ function convertResponsive() {
 			hotspot[i] = (parseFloat(hotspot[i]).toFixed(1)) + "%";
 		}
 
-		$image.after('\n' + '<a ' + type + '="' + hotspot[4] + '"class="rim-hotspot' + quickView + '" ' + 'style="width:' + hotspot[0] + ';height:' + hotspot[1] + ';left:' + hotspot[2] + ';top:' + hotspot[3] + ';position:absolute;cursor:pointer">' + ieEight + '</a>');
+
+		$image.after('\n' + '<a ' + type + '="' + hotspot[4] + '"class="rim-hotspot' + quickView + '" ' + 'style="width:' + hotspot[0] + '; height:' + hotspot[1] + '; left:' + hotspot[2] + '; top:' + hotspot[3] + '; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;">' + ieEight + '</a>');
+
 		$('.holding').remove();
 		$('.last').remove();
 		displayCode();
@@ -156,7 +158,7 @@ $('.ie').on('click', function() {
 	} else {
 		$(this).addClass('btn-success');
 		$(this).html('IE8 <i class="fa fa-check"></i>');
-		ieEight = '<img src="http://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif">';
+		ieEight = '<img src="http://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif" height="100%" width="100%">';
 	}
 });
 $('.qv').on('click', function() {
