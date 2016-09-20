@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "Gruntfile.js",
-	"author": "Alex Whalberg, Benjamin Hendricks, Cory Mandt & Ross Harried",
+	"author": "Alex Wahlberg, Benjamin Hendricks, Cory Mandt & Ross Harried",
 	"license": "ISC",
 	"devDependencies": {
 		"connect-ssi": "^1.1.0",
