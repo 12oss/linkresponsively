@@ -8,7 +8,6 @@ module.exports = function(grunt) {
 				src: ['docs/global/css/bootstrap.min.css',
 					'docs/global/css/jquery.fancybox.css',
 					'docs/global/css/prettify.css',
-					'docs/global/css/hemisu-dark.css',
 					'docs/global/css/style.css'
 				],
 
