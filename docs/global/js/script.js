@@ -7,6 +7,7 @@ dp
 draw = false;
 
 var ieEight = '';
+var quickView = '';
 var droppedURL;
 
 function draw_a_box(e) {
@@ -116,7 +117,7 @@ function convertResponsive() {
 			hotspot[i] = (parseFloat(hotspot[i]).toFixed(1)) + "%";
 		}
 
-		$image.after('\n' + '<a ' + type + '="' + hotspot[4] + '" class="rim-hotspot" style="width:' + hotspot[0] + ';height:' + hotspot[1] + ';left:' + hotspot[2] + ';top:' + hotspot[3] + ';position:absolute;cursor:pointer">' + ieEight + '</a>');
+		$image.after('\n' + '<a ' + type + '="' + hotspot[4] + '"class="rim-hotspot' + quickView + '" ' + 'style="width:' + hotspot[0] + ';height:' + hotspot[1] + ';left:' + hotspot[2] + ';top:' + hotspot[3] + ';position:absolute;cursor:pointer">' + ieEight + '</a>');
 		$('.holding').remove();
 		$('.last').remove();
 		displayCode();
@@ -156,6 +157,17 @@ $('.ie').on('click', function() {
 		$(this).addClass('btn-success');
 		$(this).html('IE8 <i class="fa fa-check"></i>');
 		ieEight = '<img src="http://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif">';
+	}
+});
+$('.qv').on('click', function() {
+	if ($(this).is('.btn-success')) {
+		$(this).removeClass('btn-success');
+		$(this).html('QV');
+		quickView = '';
+	} else {
+		$(this).addClass('btn-success');
+		$(this).html('QV <i class="fa fa-check"></i>');
+		quickView = ' fn-quickview-trigger';
 	}
 });
 
