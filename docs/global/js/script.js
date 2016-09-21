@@ -7,6 +7,7 @@ dp
 draw = false;
 
 var ieEight = '';
+var quickView = '';
 var droppedURL;
 
 function draw_a_box(e) {
@@ -116,7 +117,9 @@ function convertResponsive() {
 			hotspot[i] = (parseFloat(hotspot[i]).toFixed(1)) + "%";
 		}
 
-		$image.after('\n' + '<a ' + type + '="' + hotspot[4] + '" class="rim-hotspot" style="width:' + hotspot[0] + ';height:' + hotspot[1] + ';left:' + hotspot[2] + ';top:' + hotspot[3] + ';position:absolute;cursor:pointer">' + ieEight + '</a>');
+
+		$image.after('\n' + '<a ' + type + '="' + hotspot[4] + '"class="rim-hotspot' + quickView + '" ' + 'style="width:' + hotspot[0] + '; height:' + hotspot[1] + '; left:' + hotspot[2] + '; top:' + hotspot[3] + '; position:absolute; cursor:pointer; display:block; z-index:5; overflow:hidden;">' + ieEight + '</a>');
+
 		$('.holding').remove();
 		$('.last').remove();
 		displayCode();
@@ -155,7 +158,18 @@ $('.ie').on('click', function() {
 	} else {
 		$(this).addClass('btn-success');
 		$(this).html('IE8 <i class="fa fa-check"></i>');
-		ieEight = '<img src="http://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif">';
+		ieEight = '<img src="http://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif" height="100%" width="100%">';
+	}
+});
+$('.qv').on('click', function() {
+	if ($(this).is('.btn-success')) {
+		$(this).removeClass('btn-success');
+		$(this).html('QV');
+		quickView = '';
+	} else {
+		$(this).addClass('btn-success');
+		$(this).html('QV <i class="fa fa-check"></i>');
+		quickView = ' fn-quickview-trigger';
 	}
 });
 
@@ -178,7 +192,7 @@ function replaceBg(img, dropped) {
 	}
 	console.log(droppedURL);
 	$('#rim-img-load').hide();
-	$('#drawingArea').html('<img id="main-image" src="' + img + '" width="100%" style="position:relative">');
+	$('#drawingArea').html('<div style="position:relative"><img id="main-image" src="' + img + '" width="100%"></div>');
 }
 
 function addDelete() {
