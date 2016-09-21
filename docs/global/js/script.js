@@ -192,7 +192,7 @@ function replaceBg(img, dropped) {
 	}
 	console.log(droppedURL);
 	$('#rim-img-load').hide();
-	$('#drawingArea').html('<img id="main-image" src="' + img + '" width="100%" style="position:relative">');
+	$('#drawingArea').html('<div style="position:relative"><img id="main-image" src="' + img + '" width="100%"></div>');
 }
 
 function addDelete() {
