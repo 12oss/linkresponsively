@@ -2,12 +2,12 @@
 <html>
 
 <head>
-	<title>Create Responsive Image Maps with Any Image</title>
+	<title>Responsive Image Map Generator</title>
 	<!--Created by Ben Hendricks 2013 & remastered in 2016 by Ross Harried, Cory Mandt & Alex Wahlberg -->
-	<meta name="description" content="Create your own responsive image maps with this Responsive image map tool. Drag out hotspots on image, input a link & generate the responsive html code." />
+	<meta name="description" content="Responsive image map generator that creates responsive image maps that dynamically resize with your browser. Drag & drop your image. Generate your code." />
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<!-- FAVICONS-->
-	<!-- generated from : -->
+	<!-- generated from : http://www.favicon-generator.org/-->
 	<link rel="apple-touch-icon" sizes="57x57" href="/global/css/images/favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/global/css/images/favicon/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="/global/css/images/favicon/apple-icon-72x72.png">
@@ -38,6 +38,7 @@
 				<img src="img/placeholder.jpg" width="100%" style="position:relative;">
 				<div class="center-all">
 					<div id="rim-img-load">
+						<h1>Responsive Image Map Generator</h1>
 						<form class="form-inline" role="form" onsubmit="return false;">
 							<div class="form-group">
 								<input type="text" class="form-control link-url" placeholder="Image Path">
@@ -51,6 +52,7 @@
 				</div>
 			</div>
 			<div id="hotspotOptions" class="col-xs-12">
+				<div class="clearfix"></div>
 				<a class="btn linkType btn-default active">URL</a>
 				<a class="btn linkType btn-default">Function</a>
 				<!--<a class="btn btn-default ie">IE8</a>-->
@@ -62,7 +64,7 @@
 						<input type="text" name="url" class="input-field" placeholder="http://www.google.com">
 					</div>
 					<div class="form-group">
-						<a class="btn btn-danger" onclick="convertResponsive()"><strong>Create Hotspot</strong></a>
+						<a class="btn btn-danger" onclick="convertResponsive()"><strong>Generate Code</strong></a>
 					</div>
 				</form>
 			</div>
