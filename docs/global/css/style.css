@@ -61,12 +61,18 @@ xmp {
 }
 
 #rim-img-load {
-	left: 25%;
 	position: relative;
-	width: 50%;
+	width: 70%;
 	background-color: rgba(0, 0, 0, .5);
 	padding: 25px;
 	color: white;
+	margin: auto !important;
+}
+
+#rim-img-load h1 {
+	color: #dddddd;
+	font-size: 3.4rem;
+	padding-bottom: 20px;
 }
 
 .drop-hover {
