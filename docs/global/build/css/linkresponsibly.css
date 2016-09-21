@@ -8410,15 +8410,6 @@ ol.linenums {
 	pre .atv, code .atv { color: #060; }
 }
 
-/*
-     FILE ARCHIVED ON 18:43:08 Feb 4, 2016 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 14:17:58 Sep 20, 2016.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-
 body {
 	background-image: url('images/patterns/dark-leather.png');
 	margin: 0;
@@ -8428,6 +8419,10 @@ body {
 
 h1 {
 	margin: 0;
+}
+
+xmp {
+	white-space: pre-wrap;
 }
 
 #rim-wrapper {
