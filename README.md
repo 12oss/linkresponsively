@@ -1,4 +1,4 @@
-##Link Responsibly
+##Link Responsively
 ------
 
 This tool was developed in 2012 by [@brhendr](https://github.com/brhendr) as an easy way to drag out responsive image maps.
